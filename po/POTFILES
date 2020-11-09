@@ -1,0 +1,7 @@
+data/io.github.nilanshu96.SimpleOrganizer.desktop.in
+data/io.github.nilanshu96.SimpleOrganizer.appdata.xml.in
+data/io.github.nilanshu96.SimpleOrganizer.gschema.xml
+src/simpleorganizer-window.ui
+src/main.c
+src/simpleorganizer-window.c
+
