@@ -6,6 +6,8 @@ project('simpleorganizer', 'c',
                    ],
 )
 
+dependency('libhandy-1', version: '>= 0.9.90')
+
 i18n = import('i18n')
 
 config_h = configuration_data()
