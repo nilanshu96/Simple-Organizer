@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
-    <template class="SimpleorganizerWindow" parent="GtkApplicationWindow">
-      <property name="default-width">600</property>
-    <property name="default-height">300</property>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
+  <requires lib="libhandy" version="0.0"/>
+  <object class="GtkStack" id="stack1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="transition_type">slide-left-right</property>
+    <child>
+      <object class="GtkLabel">
         <property name="visible">True</property>
-        <property name="show-close-button">True</property>
-        <property name="title">Hello, World!</property>
+        <property name="can_focus">False</property>
+        <property name="label" translatable="yes">To Do</property>
+      </object>
+      <packing>
+        <property name="name">todo</property>
+        <property name="title" translatable="yes">To Do</property>
+        <property name="icon_name">view-list-symbolic</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="label" translatable="yes">Done</property>
+      </object>
+      <packing>
+        <property name="name">done</property>
+        <property name="title" translatable="yes">Done</property>
+        <property name="icon_name">object-select-symbolic</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="label" translatable="yes">Pomodoro</property>
+      </object>
+      <packing>
+        <property name="name">pomodoro</property>
+        <property name="title" translatable="yes">Pomodoro</property>
+        <property name="icon_name">alarm-symbolic</property>
+        <property name="position">2</property>
+      </packing>
+    </child>
+  </object>
+  <template class="SimpleorganizerWindow" parent="GtkApplicationWindow">
+    <property name="can_focus">False</property>
+    <property name="default_width">600</property>
+    <property name="default_height">300</property>
+    <child type="titlebar">
+      <object class="HdyHeaderBar" id="header_bar">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="show_close_button">True</property>
+        <property name="centering_policy">strict</property>
+        <child type="title">
+          <object class="HdySqueezer" id="squeezer">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="HdyViewSwitcher" id="headerbar_switcher">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stack">stack1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="name">title_label</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label">Organizer</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+        </child>
       </object>
     </child>
     <child>
-      <object class="GtkLabel" id="label">
-        <property name="label">Hello, World!</property>
+      <object class="GtkBox" id="box">
         <property name="visible">True</property>
-        <attributes>
-          <attribute name="weight" value="bold"/>
-          <attribute name="scale" value="2"/>
-        </attributes>
+        <property name="can_focus">False</property>
+        <property name="vexpand">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="HdyViewSwitcherBar" id="bottom_switcher">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="stack">stack1</property>
+            <property name="reveal">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
       </object>
     </child>
-    </template>
-  </interface>
+  </template>
+</interface>

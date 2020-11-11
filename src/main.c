@@ -22,8 +22,17 @@
 #include "simpleorganizer-window.h"
 
 static void
+on_startup (GtkApplication *app)
+{
+  g_assert (GTK_IS_APPLICATION (app));
+  hdy_init();
+}
+
+static void
 on_activate (GtkApplication *app)
 {
+
+  //hdy_init ();
 	GtkWindow *window;
 
 	/* It's good practice to check your parameters at the beginning of the
@@ -74,7 +83,7 @@ main (int   argc,
 	 * our "on_activate" function to a GCallback.
 	 */
 	g_signal_connect (app, "activate", G_CALLBACK (on_activate), NULL);
-
+  g_signal_connect (app, "startup", G_CALLBACK (on_startup), NULL);
 	/*
 	 * Run the application. This function will block until the applicaiton
 	 * exits. Upon return, we have our exit code to return to the shell. (This
