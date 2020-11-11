@@ -18,8 +18,10 @@
 
 #pragma once
 
+#define HANDY_USE_UNSTABLE_API
+
 #include <gtk/gtk.h>
-#include <libhandy-1/handy.h>
+#include <handy.h>
 
 G_BEGIN_DECLS
 
