@@ -1,7 +1,7 @@
 {
     "app-id" : "io.github.nilanshu96.SimpleOrganizer",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.38",
+    "runtime-version" : "3.36",
     "sdk" : "org.gnome.Sdk",
     "command" : "simpleorganizer",
     "finish-args" : [
@@ -22,25 +22,25 @@
         "*.a"
     ],
     "modules" : [
-    	{
-	    "name" : "libhandy",
-	    "buildsystem" : "meson",
-	    "config-opts" : [
-		"-Dprofiling=false",
-		"-Dintrospection=enabled",
-		"-Dgtk_doc=false",
-		"-Dtests=false",
-		"-Dexamples=false",
-		"-Dvapi=false",
-		"-Dglade_catalog=disabled"
-	    ],
-	    "sources" : [
-		{
-		    "type" : "git",
-		    "url" : "https://gitlab.gnome.org/GNOME/libhandy"
-		}
-	    ]
-	},
+        {
+            "name" : "libhandy",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dprofiling=false",
+                "-Dintrospection=enabled",
+                "-Dgtk_doc=false",
+                "-Dtests=false",
+                "-Dexamples=false",
+                "-Dvapi=false",
+                "-Dglade_catalog=disabled"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libhandy"
+                }
+            ]
+        },
         {
             "name" : "simpleorganizer",
             "builddir" : true,
@@ -52,5 +52,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "build-options" : {
+        "env" : {        }
+    }
 }
