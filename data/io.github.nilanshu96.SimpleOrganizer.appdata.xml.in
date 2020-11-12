@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
 	<id>io.github.nilanshu96.SimpleOrganizer.desktop</id>
+  <name>Simple Organizer</name>
+  <summary>A responsive To-Do app and Pomodoro timer, designed for Linux phones.</summary>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
 	<description>

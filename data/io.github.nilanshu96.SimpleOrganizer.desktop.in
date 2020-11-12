@@ -1,6 +1,7 @@
 [Desktop Entry]
-Name=simpleorganizer
+Name=Simple Organizer
 Exec=simpleorganizer
+GenericName=A responsive To-Do app and Pomodoro timer, designed for Linux phones.
 Terminal=false
 Type=Application
 Categories=GTK;
