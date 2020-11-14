@@ -6,4 +6,6 @@ This is a simple ToDo and Pomodoro timer app but with only the UI part. The func
 
 It is made with the help of Gnome-Builder. The project can be exported as flatpak and tested in various systems. The best way to work on or modify this project is by using Gnome-Builder.
 
+Info: The UI in the following gif is incorrectly rendered because of my custom theme. It's advised to run this project in a system with vanilla Gnome theme.
+
 ![simple organizer gif](https://github.com/nilanshu96/Simple-Organizer/blob/main/simple-organizer.gif)
