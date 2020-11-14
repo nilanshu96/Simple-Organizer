@@ -65,6 +65,7 @@
               <object class="HdyViewSwitcher" id="headerbar_switcher">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="policy">narrow</property>
                 <property name="stack">stack1</property>
               </object>
             </child>
