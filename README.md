@@ -9,3 +9,8 @@ It is made with the help of Gnome-Builder. The project can be exported as flatpa
 Info: The UI in the following gif is incorrectly rendered because of my custom theme. It's advised to run this project in a system with vanilla Gnome theme.
 
 ![simple organizer gif](https://github.com/nilanshu96/Simple-Organizer/blob/main/simple-organizer.gif)
+
+The correct behavior of app can be seen below in a vanilla Gnome environment
+
+![actual behavior gif](https://github.com/nilanshu96/Simple-Organizer/blob/main/actual-behavior.gif)
+
